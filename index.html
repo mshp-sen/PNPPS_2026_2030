@@ -206,6 +206,7 @@ th,td{
 thead th, tr.header th{
   background:var(--vert-fonce); color:#fff; font-weight:700; position:sticky; top:0;
 }
+thead th strong, tr.header th strong{color:#fff;}
 tbody tr:nth-child(even){background:#F6FAF7;}
 tbody tr:hover{background:#EAF4EC;}
 
@@ -3573,7 +3574,7 @@ footer.site-footer a{color:var(--or);}
 
     <footer class="site-footer">
       <div>© République du Sénégal — Ministère de la Santé et de l'Hygiène publique. Document interne.</div>
-      <div id="genDate"></div>
+
     </footer>
   </main>
 </div>
@@ -3637,7 +3638,6 @@ document.querySelectorAll('main table').forEach(t => {
   wrap.appendChild(t);
 });
 
-document.getElementById('genDate').textContent = 'Site généré automatiquement — dernière mise à jour du contenu source : ' + '20/08/2026';
 </script>
 </body>
 </html>
